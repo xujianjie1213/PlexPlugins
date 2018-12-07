@@ -11,7 +11,7 @@ from urllib2 import HTTPError
 import httplib
 
 
-ZIMUKU_API = 'http://www.zimuku.net/search?q=%s'
+ZIMUKU_API = 'https://www.zimuku.cn/search?q=%s'
 # OS_LANGUAGE_CODES = 'http://www.opensubtitles.org/addons/export_languages.php'
 ZIMUKU_PLEX_USERAGENT = 'plexapp.com v9.0'
 subtitleExt       = ['utf','utf8','utf-8','sub','srt','smi','rt','ssa','aqt','jss','ass','idx']
@@ -128,7 +128,7 @@ class ZimukuAgentMovies(Agent.Movies):
     
 
 class ZimukuAgentTVShows(Agent.TV_Shows):
-  name = 'Zimuku.net'
+  name = 'Zimuku.cn'
   languages = [Locale.Language.Chinese]
   primary_provider = False
   contributes_to = ['com.plexapp.agents.thetvdb']
